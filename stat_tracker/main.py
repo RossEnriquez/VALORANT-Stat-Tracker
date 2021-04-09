@@ -4,7 +4,7 @@ import discord
 from discord.ext import commands
 
 client = commands.Bot(command_prefix='%')
-token = 'Nzg3ODAxNjU5NzE5Mjg2Nzg1.X9aPeA.QSNkxTdUwnM2DE0JZqPDDSe9_QI'
+token = null
 
 @client.event
 async def on_ready():
