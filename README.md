@@ -5,7 +5,7 @@ The user is able to input a player's RIOT name and Tagline and the program scrap
 
 *The player statistics are only available if they have logged in to tracker.gg's to view their stats beforehand.\\
 
-GOALS:\\
+GOALS:\
 
 -get a window/frame to display text\
 -format inputs/outputs\
