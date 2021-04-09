@@ -7,6 +7,7 @@ The user is able to input a player's RIOT name and Tagline and the program scrap
 
 GOALS:
 
+-learn C++
 -get a window/frame to display text\
 -format inputs/outputs\
 -get create sections for different game modes\
