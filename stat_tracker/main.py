@@ -31,10 +31,11 @@ async def on_message(message):
 
                 e_name = f'K/D Ratio: {data[1][1]}'
                 val = f'\nWins: {data[4][1]} | Win %: {data[3][1]}\n' \
-                        f'Kills: {data[5][1]} | Deaths: {data[7][1]} | Headshots: {data[6][1]} ({data[2][1]}%)\n' \
-                        f'Assists: {data[8][1]} | Aces: {data[12][1]} | First Bloods: {data[11][1]}\n\n' \
+                        f'Kills: {data[5][1]} | Deaths: {data[7][1]}\n' \
+                        f'Headshots: {data[6][1]} ({data[2][1]}%)\n' \
+                        f'Assists: {data[8][1]} | Flawless: {data[12][1]} | Clutches: {data[11][1]}\n\n' \
                         f'Score/R: {data[9][1]} | Kills/R: {data[10][1]} | DMG/R: {data[0][1]}\n' \
-                        f'Most Kills in a Match: {data[15][1]}'
+                        f'Most Kills in a Match: {data[13][1]}'
 
                 embed.add_field(name=e_name, value=val, inline=True)
                 await message.channel.send(embed=embed)
