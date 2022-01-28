@@ -1,6 +1,7 @@
 import requests
-import bs4
+from bs4 import BeautifulSoup
 import re
+
 
 def fetch(id, mode):
     global site
@@ -21,9 +22,9 @@ def fetch(id, mode):
     id = id.replace('#', '%23')
     site = 'https://tracker.gg/valorant/profile/riot/'
     site += id + '/overview?playlist=' + game
-    res = requests.get(site)
-    soup = bs4.BeautifulSoup(res.text, 'lxml')
-    data = soup.find('body').find_all('div', class_= 'numbers')
+    res = requests.get(site).text
+    soup = BeautifulSoup(res, 'html.parser')
+    data = soup.find('body').find_all('div', class_='numbers')
 
     #store data
     for x in range(len(data)):

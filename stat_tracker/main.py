@@ -4,7 +4,7 @@ import discord
 from discord.ext import commands
 
 client = commands.Bot(command_prefix='%')
-token = null
+token = 'Nzg3ODAxNjU5NzE5Mjg2Nzg1.X9aPeA.TapQWPBJdZN5M8MGgVwjSoDk6_I'
 
 @client.event
 async def on_ready():
@@ -23,6 +23,7 @@ async def on_message(message):
             print(input)
             name = input.split('#')[0]
             data = fetch(input, mode)
+            print(data)
             if data is not None:
                 #make embed
                 embed = discord.Embed(title=f"{name}'s stats", color=0xdc3d4b, url=fetch_data.site)
